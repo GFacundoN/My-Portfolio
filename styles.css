@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Popart Pixel';
+    src: url('fonts/PopartPixel.woff2') format('woff2'),
+        url('fonts/PopartPixel.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+
+body{
+    background-color: #F6EDDA;
+}
+.separator{
+    margin: 0 auto;
+    border: 2px #232120f3 solid;
+    width: 80%;
+}
+
+/* ================= HEADER ==================*/
+header{
+    height: 90vh;
+    background-image: url(imags/mainFrame-Photoroom.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #232120f3;
+}
+header h1{
+    font-family: Popart Pixel;
+    font-size: 56px;
+    position: absolute;
+    top: 11%;
+    left: 37%;
+}
+.container{
+    padding: 4vh;
+    display: flex;
+    justify-content: space-between;
+}
+header p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: thin;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 2vh;
+}
+nav a{
+    color: #232120f3;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+/* ================= MAIN ==================*/
+
+#presentation{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4vh;
+}
+
+#presentation h1{
+    width: 90%;
+    font-family: Popart Pixel;
+    color: #232120f3;
+    font-weight: 600;
+    font-size: 72px;
+    letter-spacing: 2px;
+}
+#presentation h2{
+    width: 90%;
+    font-family: 'Roboto', sans-serif;
+    color: #232120f3;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+#presentation p{
+    width: 90%;
+    font-family: 'Roboto', sans-serif;
+    color: #232120f3;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 28px;
+}
+
+.resume {
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-flow: column; /* Los elementos se acomodan en columnas en lugar de bajar */
+    gap: 20px;
+    padding: 6vh 12vh 12vh 12vh;
+}
+
+.resume h2{
+    font-family: Popart Pixel;
+    color: #232120f3;
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 3px;
+
+}
+
+.item{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    padding: 2vh;
+    gap: 6px;
+    color: #232120e9;
+}
+.item a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 800;
+    color: #746995;
+}
+.item h4{
+    font-weight: 100;
+}
+.item p{
+    font-size: 14px;
+}
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 2vh;
+}
+
+.badge {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 8px 12px;
+    border-radius: 25px;
+    display: inline-block;
+    box-shadow: 4px 4px 0px black;
+    border: 2px solid black;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+.badge:hover {
+    transform: translateY(-5px) translateX(-2px);
+    box-shadow: 6px 6px 0px black;
+}
+
+.icon{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    gap: 6px;
+    color: #232120e9;
+}
+.icon img{
+    height: 80px;
+}
+.hobbies-container{
+    display: flex;
+    padding: 4vh;
+    gap: 2vh;
+}
+.contact-badges{
+    padding: 4vh 0 0 4vh;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+.contact-badges a{
+    text-decoration: none;
+    color: #232120e9;
+}
+.contact-icon{
+    color: #232120e9;
+    font-size: 24px;
+}
+@media (max-width: 450px){
+    
+}

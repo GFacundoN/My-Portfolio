@@ -1,0 +1,62 @@
+@media (max-width: 450px){
+
+    .separator{
+        width: 90%;
+    }
+
+    header{
+        height: 24vh;
+        
+    }
+    header .container{
+        display: none;
+    }
+    header h1{
+        font-size: 18px;
+        top: 3.5%;
+        left: 36.5%;
+    }
+    nav a{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .container{
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+    .container img{
+        width: 100%;
+    }
+
+    #presentation{
+        width: 100%;
+    }
+    #presentation h1{
+        width: 100%;
+        font-size: 64px;
+    }
+    #presentation h2{
+        width: 100%;
+        font-size: 26px;
+    }
+    #presentation p{
+        width: 100%;
+        font-size: 16px;
+        letter-spacing: 0px;
+        line-height: 26px;
+    }
+    .item{
+        width: 100%;
+    }
+
+    .resume{
+        display: grid;
+        grid-auto-flow: row; /* Los elementos se acomodan en columnas en lugar de bajar */
+        gap: 20px;
+        padding: 2vh;
+    }
+    .hobbies-container{
+        flex-wrap: wrap;
+    }
+}
