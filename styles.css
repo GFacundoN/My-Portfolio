@@ -72,7 +72,6 @@ nav a{
 }
 
 #presentation h1{
-    width: 90%;
     font-family: Popart Pixel;
     color: #232120f3;
     font-weight: 600;
@@ -103,7 +102,7 @@ nav a{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-flow: column; /* Los elementos se acomodan en columnas en lugar de bajar */
-    gap: 20px;
+    gap: 12px;
     padding: 6vh 12vh 12vh 12vh;
 }
 
@@ -132,7 +131,7 @@ nav a{
     color: #746995;
 }
 .item h4{
-    font-weight: 100;
+    font-weight: 300;
 }
 .item p{
     font-size: 14px;
@@ -145,6 +144,8 @@ nav a{
 }
 
 .badge {
+    min-width: 52px;
+    text-align: center;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
@@ -171,9 +172,9 @@ nav a{
 .icon img{
     height: 80px;
 }
-.hobbies-container{
+.lang-container{
     display: flex;
-    padding: 4vh;
+    padding: 2vh;
     gap: 2vh;
 }
 .contact-badges{
@@ -192,7 +193,4 @@ nav a{
 .contact-icon{
     color: #232120e9;
     font-size: 24px;
-}
-@media (max-width: 450px){
-    
 }
